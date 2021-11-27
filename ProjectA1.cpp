@@ -14,7 +14,7 @@ void draw()
         cout << endl;
     }
 }
-/*FIGURE OUT HOW TO STOP PLAYER X AND O FORM CHOOSING THE SAME SPACES*/
+/*FIGURE OUT HOW TO STOP PLAYER X AND O FROM CHOOSING THE SAME SPACES*/
 void input()
 {
     int a;
@@ -38,7 +38,10 @@ void input()
         matrix[2][1] = player;
     else if (a == 9)
         matrix[2][2] = player; 
-    /*if (a == )
+    /* Here is where I tried to figure out how to stop a player choosing the same space as each other...
+    Do I need to make 2 seperate players? char player1 and char player 2?
+    
+    if (a == )
     {
         return 'O';
     }
@@ -151,6 +154,8 @@ int main()
         toggle_player();
    }
 }
+/* Why can't I use a switch loop? when I the space I chose is auto increased by one? 
+exp. int a = 1 which is matrix [0][0] yet somehow X takes of the place of matrix [0][1] whcih is 2 */  
 
 /*switch (a)
     {
